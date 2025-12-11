@@ -1,0 +1,222 @@
+:root {
+  --mavi: #1E90FF;
+  --narinci: rgb(236, 91, 83);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+} 
+
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  border: 2px solid var(--narinci);
+  padding-right: 1em;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.menu-li {
+  padding: 2em;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-link:hover, .js-nav-links:hover {
+  color: var(--narinci);
+}
+
+
+.logo-img {
+  height: 4em;
+  width: auto;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-box {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.logo-box {
+  margin: 0.5em;
+  padding-left: 1em;
+}
+
+.hire-me-button {
+  background-color: var(--narinci);
+  border: none;
+  color: white;
+  padding: 1.2em;
+  margin-right: 0.5em;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.hire-me-button:hover {
+  background-color: rgb(233, 68, 59);
+}
+
+
+.menu-text {
+  padding: 1em;
+  font-size: 1.2em;
+  text-align: center;
+  display: none;
+}
+
+.fa-bars {
+  padding-left: 1em;
+  font-size: 1.2em;
+}
+
+
+.js-nav-links {
+  padding: 1em;
+}
+
+.js-hamburger-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid var(--narinci);
+  border-top: none;
+  display: none;
+}
+
+.js-hamburger-box-active {
+  display: block;
+}
+
+
+main {
+  position: relative;
+}
+
+li:hover {
+  background-color: rgba(228, 228, 228, 0.726);
+}
+
+.menu-button {
+  display: none;
+  background-color: var(--narinci);
+  height: 2.5em;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  color: white;
+  border-radius: 5%;
+}
+
+
+
+
+.hero-section {
+  width: 100%;
+  min-height: auto;
+  aspect-ratio: 16 / 9;
+  background-image: url(images/hero_img.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 6vw;
+  padding-top: 10vw;
+}
+
+.orange-text {
+  color: var(--narinci);
+}
+
+.get-design-text {
+  color: var(--narinci);
+  font-weight: normal;
+  padding-bottom: 3.5em;
+  font-size: clamp(1em, 2vw, 1.2em);
+}
+
+.name-text, .hi-text {
+  font-size: clamp(1.5em, 3vw, 3em);
+  font-style: italic;
+}
+
+.name-text {
+  padding-bottom: 5vw;
+}
+
+.short-info-text {
+  max-width: 50%;
+  min-width: 200px;
+  font-size: clamp(13px, 2vw, 1.2em);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: normal;
+  padding-bottom: clamp(6em, 5vw, 10vw);
+}
+
+.learn-more-button {
+  padding: 1.18em 2.5em;
+  border: none;
+  cursor: pointer;
+  color: var(--narinci);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .hero-section {
+    background-position: 30% center;
+  }
+}
+
+
+@media screen and (max-width:1080px) {
+  #hire-me-disappear {
+    display: none;
+  }
+  .logo-img {
+    height: 3em;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .menu-link {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-text {
+    display: contents;
+  }
+
+  .menu-li {
+    display: none;
+  }
+}
